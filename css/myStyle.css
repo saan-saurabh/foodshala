@@ -1,0 +1,333 @@
+body
+{
+	font-family: 'oswald', san-serif;
+}
+.mainBanner
+{
+  height: 450px;
+  width:100%;
+  background-image: url(../image/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'oswald', san-serif;
+  margin-top:70px;
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+.mainBanner .banner_content
+{
+    
+    padding:35px 15px 15px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: rgba(255, 67, 0, 0.3);
+    max-width: 600px;
+    border:none;
+    border-radius:1em;   
+}
+.mainBanner .banner_content .firstHeading
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size:30px;
+	color:rgba(255, 255, 0);
+	font-weight:bold;
+	letter-spacing:1px;
+}
+.mainBanner .banner_content .secondHeading
+{
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size:20px;
+	color:white;
+	letter-spacing:1px;
+}
+
+.shadow
+{
+	box-shadow: 0px 0px 10px 0px;
+
+}
+.restrauntList{
+ margin-top:20px;
+}
+
+.restrauntList .container
+{
+	
+	background-color:#f8f8f8 ;
+	letter-spacing: 1px;
+	padding:10px;
+}
+.restrauntList .container .row
+{
+	font-size: 18px;
+}
+.restrauntList .container .row p
+{
+	font-size: 24px;
+	color:rgba(255, 255, 0);;
+}
+
+.restrauntList .container .innerRow
+{
+	
+    letter-spacing: 1px;
+	padding:10px;
+	margin:0 auto;
+	background-color: #fff;
+}
+.restrauntList .container .innerRow .innerDiv
+{
+	display: flex;
+	justify-content: space-between;
+
+}
+.restrauntList .container .innerRow .innerDiv .restrauntImg img
+{
+	height:100px;
+	width:100px;
+}
+.restrauntList .container .innerRow .innerDiv .restrauntName
+{
+	font-size: 18px;
+	color:black;
+}
+.restrauntList .container .innerRow .innerDiv .restrauntCtg
+{
+	font-size: 14px;
+	color:red;
+}
+
+
+
+#foot{
+	position:relative;
+	bottom:0;
+	width:100%;
+
+}
+#foot li
+{ 
+	list-style-type: none;
+}
+#foot a{
+	text-decoration: none;
+}
+
+.formBody
+{
+	border:1px solid gray;
+}
+
+.rowStyle
+{
+	margin:0 auto;
+}
+
+
+.restrauntMenu
+{
+	margin-top:75px;
+}
+.restrauntMenu .container .row .mainDiv
+{
+background-color: #f8f8f8;
+margin:0 auto;
+padding: 15px;
+
+}
+.restrauntMenu .container .row .mainDiv .heading .subhead
+{
+	font-size:14px;
+	color:gray;
+}
+.tableScroll
+{
+width:97%;
+margin:0 auto;
+}
+
+
+.restrauntMenu .container .row .mainDiv .dishDetails
+{
+display:flex;
+justify-content: space-between;;
+}
+
+
+
+.restrauntMenu .container .row .menuHeading
+{
+	font-size:25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:maroon;
+}
+
+.restrauntMenu .container .row .dishType
+{
+	font-size:16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color:blue;
+}
+
+.restrauntMenu .container .row .dishName
+{
+	font-size:14px;
+}
+
+.orderSummary
+{
+	margin-top:100px;
+}
+
+.successMessage
+{
+	margin-top:200px;
+}
+
+.restrauntAdmin
+{
+	margin-top:100px;
+}
+
+.restrauntDishAdd
+{
+	margin-top:100px;
+}
+.orderList
+{
+	margin-top:100px;
+}
+.orderList .container .row .table .table-striped table{
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+{
+	margin-top:100px;
+}
+.dishEdit
+{
+	margin-top:100px;
+}
+.userPortal{
+	margin-top:80px;
+}
+.restrauntAdmin .container .row .restName
+{
+	color:maroon;
+	font-size: 26px;
+	font-weight: bold;
+}
+.restrauntAdmin .container .row .restName .restAdd
+{
+	color:gray;
+	font-size: 14px;
+} 
+
+.restrauntAdmin .container .row .listItem
+{
+	font-size:20px;
+}
+.orderSummary .container .row .orderSummr
+{
+	font-size: 20px;
+}
+
+
+@media(max-width: 768px)
+{
+.mainBanner
+{
+  height: 380px;
+}
+.mainBanner .banner_content
+{
+    
+    padding:80px 15px 15px;
+    margin-top: 8%;
+    margin-bottom: 8%;   
+}
+.mainBanner .banner_content .firstHeading
+{
+	
+	font-size:23px;
+
+}
+.mainBanner .banner_content .secondHeading
+{
+	font-size:16px;
+}
+.restrauntList .container .row
+{
+	font-size: 15px;
+}
+.restrauntList .container .row p
+{
+	font-size: 18px;
+}
+.restrauntList .container .innerRow .innerDiv .restrauntName
+{
+	font-size: 14px;
+	color:black;
+}
+.restrauntList .container .innerRow .innerDiv .restrauntCtg
+{
+	font-size: 11px;
+	color:red;
+}
+.restrauntMenu .container .row .menuHeading
+{
+	font-size:18px;
+	
+}
+.restrauntMenu .container .row .mainDiv .heading .subhead
+{
+	font-size:13px;
+}
+.restrauntMenu .container .row .dishType
+{
+	font-size:13px;
+}
+.restrauntMenu .container tbody
+{
+	font-size:13px;
+}
+.restrauntAdmin .container .row thead
+{
+font-size:14px;	
+}
+.restrauntAdmin .container .row tbody
+{
+font-size:13px;	
+}
+.restrauntAdmin .container .row .listItem
+{
+	font-size:15px;
+}
+.restrauntAdmin .container .row .restName
+{
+	font-size:18px;
+}
+.orderList .container .row tbody
+{
+font-size:13px;
+}
+.orderSummary .container .row .orderSummr
+{
+	font-size: 16px;
+}
+.orderSummary .container .row thead
+{
+	font-size: 12px;
+}
+.orderSummary .container .row tbody
+{
+	font-size: 12px;
+}
+.orderSummary .container .row button
+{
+	font-size: 12px;
+}
+}
