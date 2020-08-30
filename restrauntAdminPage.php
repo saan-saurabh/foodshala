@@ -34,7 +34,7 @@ echo "<p class='restName'>".$row['restraunt_name']."</p>";
 		</div>
 		<div class="col-sm-3 col-lg-3 col-md-3">
 			<a href="restrauntDishAdd.php"><button class="btn btn-sm btn-secondary" type="submit" value="order">Add Item</button></a>
-			<a href="prac.php"><button class="btn btn-sm btn-secondary" type="submit" value="order">View all Orders</button></a>
+			<a href="restrauntOrderList.php"><button class="btn btn-sm btn-secondary" type="submit" value="order">View all Orders</button></a>
 		</div>
 	</div>
 	<div class="row pt-2 pb-2 pl-1 pr-1">
