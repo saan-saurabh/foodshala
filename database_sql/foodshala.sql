@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 29, 2020 at 10:22 PM
+-- Generation Time: Aug 30, 2020 at 07:06 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -49,7 +49,10 @@ INSERT INTO `dishes` (`dish_id`, `restraunt_id`, `dish_name`, `price`, `category
 (17, 2, 'rice', 120, 'Main Course', 'Veg'),
 (18, 2, 'veg pulav', 120, 'Main Course', 'Veg'),
 (19, 2, 'sandwich', 60, 'Breakfast', 'Veg'),
-(20, 2, 'poha', 60, 'Breakfast', 'Veg');
+(20, 2, 'poha', 60, 'Breakfast', 'Veg'),
+(23, 1, 'rice', 100, 'Main Course', 'Veg'),
+(24, 1, 'rice', 100, 'Main Course', 'Non-veg'),
+(25, 1, 'fried rice', 160, 'Chinese', 'Veg');
 
 -- --------------------------------------------------------
 
@@ -139,8 +142,7 @@ INSERT INTO `users` (`user_id`, `user_name`, `user_email`, `password`, `address`
 -- Indexes for table `dishes`
 --
 ALTER TABLE `dishes`
-  ADD PRIMARY KEY (`dish_id`),
-  ADD UNIQUE KEY `dish_name` (`dish_name`);
+  ADD PRIMARY KEY (`dish_id`);
 
 --
 -- Indexes for table `orders`
@@ -168,7 +170,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `dishes`
 --
 ALTER TABLE `dishes`
-  MODIFY `dish_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `dish_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `orders`
