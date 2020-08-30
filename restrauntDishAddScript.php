@@ -14,7 +14,7 @@ $id=$_SESSION['restraunt_id'];
 
   $type = $_POST['radio'];
 
-  $query = "SELECT * FROM dishes WHERE dish_name='$name'";
+  $query = "SELECT * FROM dishes WHERE restraunt_id='$id' AND dish_name='$name' AND type='$type'";
   $result = mysqli_query($con, $query)or die($mysqli_error($con));
   $num = mysqli_num_rows($result);
   
