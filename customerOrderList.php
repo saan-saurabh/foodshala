@@ -32,7 +32,7 @@ include "includes/header.php";
 						</thead>
 						<tbody>";
                     while($row=mysqli_fetch_array($result)){
-                    	$query1 = "SELECT restraunt_name, restraunt_contact FROM restraunts d inner join orders o on d.restraunt_id=o.restraunt_id WHERE customer_email='$email' AND status='confirmed'";
+                    	$query1 = "SELECT restraunt_name, restraunt_contact FROM restraunts where restraunt_email='{$row['restraunt_email']}'";
                     $result1 = mysqli_query($con, $query1)or die($mysqli_error($con));
                     $num1 = mysqli_num_rows($result1);
                     $row1=mysqli_fetch_array($result1);
