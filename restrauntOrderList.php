@@ -40,7 +40,7 @@ include "includes/header.php";
                     
                      
 				while($row=mysqli_fetch_array($result)){
-                    	$query1 = "SELECT user_name,user_email, contact FROM users d inner join orders o on d.user_email=o.customer_email WHERE restraunt_email='$email' AND status='confirmed'";
+                    	$query1 = "SELECT user_name,user_email, contact FROM users WHERE user_email='{$row['customer_email']}'";
                     $result1 = mysqli_query($con, $query1)or die($mysqli_error($con));
                     $num1 = mysqli_num_rows($result1);
                     $row1=mysqli_fetch_array($result1);
